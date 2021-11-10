@@ -1,3 +1,33 @@
-body {
-  background-color: red;
+:root{
+  --color-main:#0A0B21;
+  --color-main-text:#52575C;
+  --color-main-soft:#FFFFFF;
+  --color-accent:#FFBE00;
 }
+
+@mixin subtitle{
+  font-size: 2rem;
+  line-height: (23 / 20);
+  letter-spacing: 0.2rem;
+}
+
+@mixin text-small{
+  font-size: 1.6rem;
+  line-height: (28 / 16);
+}
+
+@mixin headings {
+  font-size: 4rem;
+  line-height: (46 / 40);
+}
+
+@mixin text-nav{
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: (21 / 18);
+}
+
+@import "reset.scss";
+@import "general.scss";
+@import "sections/hero.scss";
+

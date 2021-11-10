@@ -1,0 +1,25 @@
+.hero{
+    min-height: 100vh;
+}
+
+.logo{
+    font-size: 5rem;
+    line-height: 1.16;
+    color: var(--color-main);
+}
+
+.header__nav{
+    @include text-nav;
+}
+
+.header__nav-item{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 150px;
+}
