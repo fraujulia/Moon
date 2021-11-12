@@ -27,7 +27,15 @@
   line-height: (21 / 18);
 }
 
+@mixin button{
+  font-size: 1.6rem;
+  line-height: (18 / 16);
+  color: white;
+  background-color: var(--color-accent);
+}
+
 @import "reset.scss";
 @import "general.scss";
 @import "sections/hero.scss";
+@import "sections/about-us.scss";
 

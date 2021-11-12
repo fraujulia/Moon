@@ -21,5 +21,48 @@
 .header{
     display: flex;
     justify-content: space-between;
-    padding: 30px 150px;
+    padding-top: 30px;
+    align-items: center;
 }
+
+.header__button{
+    color: var(--color-main);
+    @include text-nav;
+    width: 120px;
+    height: 45px;
+    background-color: white;
+    border: solid 1px;
+    border-radius: 20px;
+    border-color: var(--color-accent);
+}
+
+.hero__button{
+    width: 179px;
+    height: 44px;
+   @include button;
+}
+
+.hero__content{
+    display: flex;
+    justify-content: space-between;
+    gap: 68px;
+    align-items: center;
+}
+
+.hero__picture{
+    width: 50%;
+}
+
+.hero__subtitle{
+    padding-bottom: 5px;
+}
+
+.hero__title{
+    padding-bottom: 50px;
+}
+
+.hero__text{
+    padding-bottom: 50px;
+}
+
+

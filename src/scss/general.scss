@@ -38,3 +38,16 @@
       margin-left: auto;
       margin-right: auto;
   }
+
+  .subtitle{
+    @include subtitle;
+  }
+
+  .title-main{
+    @include headings;
+  }
+
+  .text-small{
+    @include text-small;
+  }
+
