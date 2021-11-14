@@ -1,0 +1,46 @@
+.choice__subtitle{
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.choice__title{
+    padding-bottom: 30px;
+    text-align: center;
+}
+.choice__text{
+    margin-left: auto;
+    margin-right: auto;
+    width: 463px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.choice__cards-list{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 160px;
+}
+
+.choice__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0px 35px 40px rgba(33, 46, 92, 0.1);
+    padding: 40px 35px 40px 35px;
+}
+
+.choice__card-image{
+    padding-bottom: 20px;
+}
+
+
+.choice__card-heading{
+    text-align: center;
+}
+
+.choice__card-text{
+    text-align: center;
+}
+

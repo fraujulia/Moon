@@ -51,3 +51,15 @@
     @include text-small;
   }
 
+  .price{
+    @include price;
+  }
+
+  .cards-title{
+    @include cards-title;
+  }
+
+  .subtitle-tight{
+    @include subtitle-tight;
+  }
+

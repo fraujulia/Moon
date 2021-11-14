@@ -9,6 +9,12 @@
   font-size: 2rem;
   line-height: (23 / 20);
   letter-spacing: 0.2rem;
+  font-weight: 500;
+}
+
+@mixin subtitle-tight{
+  font-size: 2rem;
+  line-height: (23 / 20);
 }
 
 @mixin text-small{
@@ -34,8 +40,24 @@
   background-color: var(--color-accent);
 }
 
+@mixin price{
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: (35/30);
+}
+
+@mixin cards-title{
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: (28 / 30);
+  color: var(--color-main);
+}
+
 @import "reset.scss";
 @import "general.scss";
 @import "sections/hero.scss";
 @import "sections/about-us.scss";
+@import "sections/explore.scss";
+@import "sections/browse.scss";
+@import "sections/choice.scss";
 

@@ -1,0 +1,44 @@
+
+
+.explore__arrows{
+    
+    display: inline;
+}
+
+.explore__subtitle{
+    text-align: center;
+}
+
+.explore__title{
+    display: inline;
+}
+
+.explore__arrow:nth-child(2){
+    background-color: var(--color-accent);
+}
+
+.explore__box-with-arrows{
+    text-align: center;
+    left: 331px;
+    padding-bottom: 62px;
+}
+
+.explore__image-list{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-items: stretch;
+}
+
+.explore__image{
+    width: 100%;
+}
+
+
+.explore__dish-description{
+    position: relative;
+    bottom: 120px;
+    right: 0;
+    background: rgba(255, 255, 255, 0.63);
+    padding: 25px 30px 26px 30px;
+}
