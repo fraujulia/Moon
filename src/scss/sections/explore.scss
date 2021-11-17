@@ -1,8 +1,12 @@
-
-
 .explore__arrows{
-    
-    display: inline;
+    display: inline-block;
+    position: absolute;
+    right: 390px;
+}
+
+.explore__arrow{
+    box-shadow: 0px 8px 10px rgba(39, 59, 109, 0.1);
+    width: 40px;
 }
 
 .explore__subtitle{
@@ -11,6 +15,7 @@
 
 .explore__title{
     display: inline;
+    position: relative;
 }
 
 .explore__arrow:nth-child(2){
@@ -19,7 +24,6 @@
 
 .explore__box-with-arrows{
     text-align: center;
-    left: 331px;
     padding-bottom: 62px;
 }
 
@@ -27,7 +31,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
-    justify-items: stretch;
+   
 }
 
 .explore__image{
@@ -42,3 +46,4 @@
     background: rgba(255, 255, 255, 0.63);
     padding: 25px 30px 26px 30px;
 }
+

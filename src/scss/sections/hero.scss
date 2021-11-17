@@ -10,6 +10,7 @@
 
 .header__nav{
     @include text-nav;
+    font-weight: 700;
 }
 
 .header__nav-item{

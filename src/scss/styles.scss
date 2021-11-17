@@ -3,6 +3,7 @@
   --color-main-text:#52575C;
   --color-main-soft:#FFFFFF;
   --color-accent:#FFBE00;
+  --color-bg:#5E626F;
 }
 
 @mixin subtitle{
@@ -25,11 +26,11 @@
 @mixin headings {
   font-size: 4rem;
   line-height: (46 / 40);
+  font-weight: 700;
 }
 
 @mixin text-nav{
   font-size: 1.8rem;
-  font-weight: 700;
   line-height: (21 / 18);
 }
 
@@ -53,6 +54,12 @@
   color: var(--color-main);
 }
 
+@mixin footer-titles{
+  font-size: 2.6rem;
+  line-height: (30 / 26);
+  font-weight: 700;
+}
+
 @import "reset.scss";
 @import "general.scss";
 @import "sections/hero.scss";
@@ -61,4 +68,6 @@
 @import "sections/browse.scss";
 @import "sections/choice.scss";
 @import "sections/chefs.scss";
+@import "sections/testimonial.scss";
+@import "sections/footer.scss";
 
