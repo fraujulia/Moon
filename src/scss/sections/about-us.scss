@@ -1,17 +1,27 @@
 .about-us{
     padding-bottom: 160px;
+    @include media-phone{
+        padding-bottom: 30px;
+    }
 }
 
 .about-us__button{
     width: 179px;
     height: 44px;
    @include button;
+   @include media-phone{
+    margin-bottom: 15px;
+    }
 }
 
 .about-us__content{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include media-phone{
+        display: block;
+        text-align: center;
+    }
 }
 
 .about-us__subtitle{
@@ -20,10 +30,16 @@
 
 .about-us__title{
     padding-bottom: 30px;
+    @include media-phone{
+        padding-bottom: 15px;
+    }
 }
 
 .about-us__text{
     padding-bottom: 50px;
+    @include media-phone{
+        padding-bottom: 20px;
+    }
 }
 
 .about-us__images-box{

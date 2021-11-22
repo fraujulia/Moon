@@ -4,6 +4,9 @@
 
 .chefs__title{
     padding-bottom: 30px;
+    @include media-phone{
+        padding-bottom: 15px;
+    }
 }
 
 .chefs__container{
@@ -12,12 +15,25 @@
     gap: 145px;
     align-items: center;
     padding-bottom: 100px;
+    @include media-tablet{
+        display: block;
+        padding-bottom: 30px;
+    }
 }
 
 .chefs__images-box{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+    @include media-tablet{
+        justify-content: center;
+    }
+}
+
+.chefs__text{
+    @include media-tablet{
+        padding-bottom: 15px;
+    }
 }
 
 .chefs__chef-photo{
@@ -34,5 +50,11 @@
     gap: 52px;
     padding-bottom: 157px;
     align-items: center;
+    @include media-tablet{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding-bottom: 20px;
+    }
 }
 

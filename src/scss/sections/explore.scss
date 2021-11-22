@@ -1,6 +1,12 @@
+.explore{
+    padding-bottom: 160px;
+    @include media-phone{
+        padding-bottom: 30px;
+    }
+}
+
 .explore__arrows{
     display: inline-block;
-    position: absolute;
     right: 390px;
 }
 
@@ -15,7 +21,6 @@
 
 .explore__title{
     display: inline;
-    position: relative;
 }
 
 .explore__arrow:nth-child(2){
@@ -25,25 +30,32 @@
 .explore__box-with-arrows{
     text-align: center;
     padding-bottom: 62px;
+    @include media-phone{
+        padding-bottom: 30px;
+    }
 }
 
 .explore__image-list{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
-   
+    @include media-tablet{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-.explore__image{
-    width: 100%;
+.explore__image-box{
+    position: relative;
 }
-
 
 .explore__dish-description{
-    position: relative;
-    bottom: 120px;
-    right: 0;
+    position: absolute;
+    bottom: 0;
+    
     background: rgba(255, 255, 255, 0.63);
     padding: 25px 30px 26px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 

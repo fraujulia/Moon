@@ -6,6 +6,9 @@
 .choice__title{
     padding-bottom: 30px;
     text-align: center;
+    @include media-tablet{
+        padding-bottom: 15px;
+    }
 }
 .choice__text{
     margin-left: auto;
@@ -20,6 +23,10 @@
     justify-content: center;
     gap: 40px;
     padding-bottom: 160px;
+    @include media-tablet{
+        display: block;
+        padding-bottom: 30px;
+    }
 }
 
 .choice__card{

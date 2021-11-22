@@ -6,6 +6,18 @@
     font-size: 5rem;
     line-height: 1.16;
     color: var(--color-main);
+    @include media-tablet{
+        font-size: 4rem;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+.header__button-wrapper{
+    @include media-tablet{
+        text-align: right;
+        padding-top: 20px;
+    }
 }
 
 .header__nav{
@@ -17,6 +29,9 @@
     display: flex;
     justify-content: space-between;
     gap: 50px;
+    @include media-tablet{
+        gap: 20px;
+    }
 }
 
 .header{
@@ -24,6 +39,9 @@
     justify-content: space-between;
     padding-top: 30px;
     align-items: center;
+    @include media-tablet{
+        display: block;
+    }
 }
 
 .header__button{
@@ -35,6 +53,10 @@
     border: solid 1px;
     border-radius: 20px;
     border-color: var(--color-accent);
+    @include media-phone{
+        width: 95px;
+        height: 35px;
+    }
 }
 
 .hero__button{
@@ -48,6 +70,11 @@
     justify-content: space-between;
     gap: 68px;
     align-items: center;
+    @include media-phone{
+        display: block;
+        padding-top: 30px;
+        text-align: center;
+    }
 }
 
 .hero__picture{
@@ -56,14 +83,24 @@
 
 .hero__subtitle{
     padding-bottom: 5px;
+    @include media-phone{
+       text-align: center;
+    }
 }
 
 .hero__title{
     padding-bottom: 50px;
+    @include media-phone{
+        text-align: center;
+        padding-bottom: 20px;
+     }
 }
 
 .hero__text{
     padding-bottom: 50px;
+    @include media-phone{
+        padding-bottom: 20px;
+     }
 }
 
 
