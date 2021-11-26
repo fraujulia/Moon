@@ -1,8 +1,13 @@
+
+
 .chefs__subtitle{
+    text-align: center;
     padding-bottom: 5px;
 }
 
 .chefs__title{
+    text-align: center;
+    padding-bottom: 60px;
     padding-bottom: 30px;
     @include media-phone{
         padding-bottom: 15px;
@@ -16,8 +21,9 @@
     align-items: center;
     padding-bottom: 100px;
     @include media-tablet{
-        display: block;
+        flex-direction: column;
         padding-bottom: 30px;
+        gap: 30px;
     }
 }
 
@@ -27,6 +33,12 @@
     gap: 40px;
     @include media-tablet{
         justify-content: center;
+        gap: 10px;
+    }
+    @include media-phone{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        align-content: center;
     }
 }
 
@@ -42,6 +54,15 @@
 
 .chefs__card-title{
     padding-bottom: 10px;
+    @include media-phone{
+        text-align: center;
+    }
+}
+
+.chefs__box-text{
+    @include media-phone{
+        text-align: center;
+    }
 }
 
 .press-list{

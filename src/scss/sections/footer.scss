@@ -2,12 +2,19 @@
     background-color: var(--color-bg);
     color: #FFFFFF;
     padding: 100px 120px 100px 120px;
+    @include media-tablet{
+    padding: 50px;
+    }
 }
 
 .footer__container{
     display: flex;
     justify-content: space-between;
     gap: 120px;
+    @include media-tablet{
+        flex-direction: column;
+        gap: 30px;
+    }
 }
 
 .footer__logo-item{
@@ -25,6 +32,11 @@
     display: flex;
     justify-content: space-between;
     gap: 80px;
+    @include media-phone{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
 }
 
 .footer__list-link--accent{
@@ -47,6 +59,9 @@
     border-width: 1px;
     margin-left: auto;
     margin-right: auto;
+    @include media-tablet{
+        display: none;
+    }
 }
 
 .footer__long-line{

@@ -1,15 +1,8 @@
 .testimonial{
     padding-bottom: 160px;
-}
-
-.chefs__subtitle{
-    text-align: center;
-    padding-bottom: 5px;
-}
-
-.chefs__title{
-    text-align: center;
-    padding-bottom: 60px;
+    @include media-tablet{
+        padding-bottom: 30px;
+    }
 }
 
 .testimonial__container{
@@ -17,6 +10,10 @@
     justify-content: space-between;
     align-items: center;
     gap: 60px;
+    @include media-phone{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 .testimonial__button-next{
@@ -24,6 +21,9 @@
     width: 100px;
     background-color: var(--color-accent);
     color: white;
+    @include media-tablet{
+        display: none;
+    }
 }
 
 .testimonial__button-prev{
@@ -33,6 +33,15 @@
     width: 100px;
     background: #FFFFFF;
     box-shadow: 0px 6px 8px rgba(39, 59, 109, 0.1);
+    @include media-tablet{
+        display: none;
+    }
+}
+
+.testimonial__image{
+    @include media-tablet{
+        width: 300px;
+    }
 }
 
 .testimonial__text{
@@ -44,9 +53,15 @@
 .testimonial__subtitle{
     font-weight: 700;
     padding-bottom: 10px;
+    @include media-phone{
+        text-align: center;
+    }
 }
 
 .testimonial__small-text{
     font-size: 1.4rem;
     line-height: 1.14;
+    @include media-phone{
+        text-align: center;
+    }
 }
